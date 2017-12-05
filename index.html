@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="game1.js"></script>
+    <script src="sprite.js"></script>
+    <link rel="stylesheet" type="text/css" href="gamecss.css">
+
+</head>
+<div id="title"><h1>JUMPING JACK</h1></div>
+<div id="score">Score: 0</div>
+<div id="Highscore">Highscore: 0</div>
+
+
+<body background="Bgimage.png">
+
+
+<div id = "img"><img id = "zelda" src="zeldabckgrnd.png" onload="loadImage()" width="400" height="430"/></div>
+
+<div id ="wrapper"></div>
+
+<a id="resetbutton" href  ="javascript: resetgame()">play again</a>
+
+
+
+
+<div id="SplashScreen">
+
+    <input id="StartButton" type="button" value="Start"/>
+
+</div>
+
+
+
+<script>
+
+    function loadImage(){
+
+         // try to hide google navigation bar
+    };
+    $("#StartButton").click(function () {
+        $("#img").hide();
+        main();
+        document.getElementById("StartButton").style.display = "none";
+
+
+        $("#wrapper").show();
+    });
+</script>
+
+
+
+
+</body>
+</html>
